@@ -1,3 +1,11 @@
 $(document).ready(() => {
-	$('#self-photo').height($('#intro-container-div').height() - 20)
+	calculateSelfPhotoDimension()
 })
+
+$(window).resize(() => {
+	calculateSelfPhotoDimension()
+})
+
+const calculateSelfPhotoDimension = () => {
+	$('#self-photo-img').height($('#intro-container-div').height() - 20)
+}
