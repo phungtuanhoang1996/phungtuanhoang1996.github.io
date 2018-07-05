@@ -1,0 +1,15 @@
+#intro-container-div {
+    border: solid aqua;
+    width: 95vw;
+    height: 20vh
+}
+
+#self-photo {
+    object-fit: cover;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
