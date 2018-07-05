@@ -10,18 +10,26 @@
 
 body {
     font-family: "Lato Regular", serif;
+    /*background-color: #4D6078;*/
+    /*color: white*/
 }
 
 #intro-container-div {
     /*border: solid aqua;*/
-    width: 95vw;
-    height: 20vh;
+    width: 50vw;
+    /*height: 20vh;*/
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
 #intro-container-div:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+#self-intro-p {
+    padding: 0 20px 0 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #projects-container-div {
@@ -30,8 +38,10 @@ body {
     flex-direction: column;
 }
 
-#self-photo {
-    object-fit: cover;
+#self-photo-img {
+    border-radius: 50%;
+    border: solid grey;
+    height: 0
 }
 
 .centered {
@@ -58,4 +68,13 @@ body {
 
 .project-card-skill-list-item {
     display: inline
+}
+
+.large-font {
+    font-size: 200%;
+}
+
+.contact-icon {
+    height: 40px;
+    margin: 0 10px 0 10px;
 }
