@@ -1,12 +1,27 @@
+@font-face {
+    font-family: "Lato Regular";
+    src:url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Medium";
+    src:url("fonts/Lato-Medium.ttf");
+}
+
+body {
+    font-family: "Lato Regular", serif;
+}
+
 #intro-container-div {
-    border: solid aqua;
+    /*border: solid aqua;*/
     width: 95vw;
     height: 20vh;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #intro-container-div:hover {
-    background-color: cyan;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #projects-container-div {
