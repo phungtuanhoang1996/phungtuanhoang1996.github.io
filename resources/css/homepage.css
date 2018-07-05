@@ -10,8 +10,8 @@
 
 body {
     font-family: "Lato Regular", serif;
-    /*background-color: #4D6078;*/
-    /*color: white*/
+    background-color: #2C343D;
+    color: white
 }
 
 #intro-container-div {
@@ -33,9 +33,9 @@ body {
 }
 
 #projects-container-div {
-    border: solid aqua;
     width: 95vw;
     flex-direction: column;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)*/
 }
 
 #self-photo-img {
@@ -78,3 +78,4 @@ body {
     height: 40px;
     margin: 0 10px 0 10px;
 }
+
