@@ -1,7 +1,18 @@
 #intro-container-div {
     border: solid aqua;
     width: 95vw;
-    height: 20vh
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+#intro-container-div:hover {
+    background-color: cyan;
+}
+
+#projects-container-div {
+    border: solid aqua;
+    width: 95vw;
+    flex-direction: column;
 }
 
 #self-photo {
@@ -12,4 +23,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project-card {
+    height: 200px;
+    width: 45%;
+    border: solid hotpink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.project-card-skill-list {
+    display: inline-block;
+}
+
+.project-card-skill-list-item {
+    display: inline
 }

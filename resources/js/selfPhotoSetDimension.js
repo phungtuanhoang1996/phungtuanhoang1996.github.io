@@ -7,5 +7,7 @@ $(window).resize(() => {
 })
 
 const calculateSelfPhotoDimension = () => {
-	$('#self-photo-img').height($('#intro-container-div').height() - 20)
+	$(".autosized-image").each((index, object) => {
+		$(object).height($(object).parent().height() - 20)
+	})
 }
