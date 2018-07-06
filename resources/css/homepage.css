@@ -9,13 +9,14 @@
 }
 
 html {
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 body {
     font-family: "Lato Regular", serif;
     background-color: #354057;
-    color: white
+    color: white;
+    visibility: hidden;
 }
 
 #intro-container-div {

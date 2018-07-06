@@ -18,5 +18,6 @@ $(document).ready(() => {
 })
 
 $(document).ready(function() {
-	document.getElementsByTagName("html")[0].style.visibility = "visible";
+	// document.getElementsByTagName("html")[0].style.visibility = "visible";
+	setTimeout('jQuery("body").css("visibility","visible");', 500);
 });
