@@ -41,7 +41,7 @@ body {
 #self-photo-img {
     border-radius: 50%;
     border: solid grey;
-    height: 0
+    height: 150px;
 }
 
 .centered {
@@ -77,6 +77,12 @@ body {
     background-color: aquamarine;
     padding: 5px;
     border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project-card-skill-list-item:first-child {
+    margin-left: 0;
 }
 
 .huge-font {
@@ -96,10 +102,18 @@ body {
     transform: scale(1.2, 1.2);
 }
 
-.project-image {
+.project-image-wrapper {
+    height: 180px;
+    width: 180px;
     border: solid rgba(204, 212, 255, 0.7);
     border-radius: 2px;
     margin-right: 20px;
+    overflow: hidden;
+    flex: none
+}
+
+.project-image {
+    height: 180px;
 }
 
 .project-card-skill-list-item-java {
