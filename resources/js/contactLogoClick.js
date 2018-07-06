@@ -16,3 +16,7 @@ $(document).ready(() => {
 		else alert("Please allow pop up for this site")
 	})
 })
+
+$(document).ready(function() {
+	document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
