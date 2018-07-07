@@ -19,8 +19,10 @@ $(document).ready(() => {
 
 $(window).on("load", () => {
 	$("body").css('visibility', 'visible')
+
 	$("#intro-container-div").addClass('loaded')
 	setTimeout(() => {
+		$("#project-label").addClass('loaded')
 		let projectCards = $(".project-card")
 		for (let i = 0; i < projectCards.length; i++) {
 			setTimeout(() => {
