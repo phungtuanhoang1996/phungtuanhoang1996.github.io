@@ -27,8 +27,20 @@ body {
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
 }
 
-#intro-container-div:hover {
+#intro-container-div.loaded {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
 
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #self-intro-p {
@@ -56,6 +68,7 @@ body {
 }
 
 .project-card {
+    visibility: hidden;
     flex: 40%;
     height: 200px;
     width: 45%;
@@ -69,6 +82,22 @@ body {
     margin: 10px;
     background-color: #232A30;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-card.loaded {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .justified-text {
@@ -106,6 +135,7 @@ body {
 .contact-icon {
     height: 40px;
     margin: 0 10px 0 10px;
+    transition: 0.1s
 }
 
 .contact-icon:hover {

@@ -19,4 +19,14 @@ $(document).ready(() => {
 
 $(window).on("load", () => {
 	$("body").css('visibility', 'visible')
+	$("#intro-container-div").addClass('loaded')
+	setTimeout(() => {
+		let projectCards = $(".project-card")
+		for (let i = 0; i < projectCards.length; i++) {
+			setTimeout(() => {
+				$(projectCards[i]).addClass('loaded').css('visibility', 'visible')
+
+			}, i * 200)
+		}
+	}, 500)
 })
