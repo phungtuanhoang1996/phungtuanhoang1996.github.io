@@ -22,7 +22,7 @@ $(window).on("load", () => {
 
 	$("#intro-container-div").addClass('loaded')
 	setTimeout(() => {
-		$("#project-label").addClass('loaded')
+		$(".section-label").addClass('loaded')
 		let projectCards = $(".project-card")
 		for (let i = 0; i < projectCards.length; i++) {
 			setTimeout(() => {
