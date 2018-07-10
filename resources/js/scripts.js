@@ -33,20 +33,22 @@ $(window).on("load", () => {
 })
 
 $(window).on('resize', () => {
-	console.log('image resizing')
-	let projectCards = $('.project-card')
+	setTimeout(() => {
+		console.log('image resizing')
+		let projectCards = $('.project-card')
 
-	for (let i = 0; i < projectCards.length; i++) {
-		$(projectCards[i]).css('height', 'auto')
-	}
+		for (let i = 0; i < projectCards.length; i++) {
+			$(projectCards[i]).css('height', 'auto')
+		}
 
-	var maxHeight = 0
+		var maxHeight = 0
 
-	for (let i = 0; i < projectCards.length; i++) {
-		if ($(projectCards[i]).height() > maxHeight) maxHeight = $(projectCards[i]).height()
-	}
+		for (let i = 0; i < projectCards.length; i++) {
+			if ($(projectCards[i]).height() > maxHeight) maxHeight = $(projectCards[i]).height()
+		}
 
-	for (let i = 0; i < projectCards.length; i++) {
-		$(projectCards[i]).height(maxHeight)
-	}
+		for (let i = 0; i < projectCards.length; i++) {
+			$(projectCards[i]).height(maxHeight)
+		}
+	}, 100)
 })
